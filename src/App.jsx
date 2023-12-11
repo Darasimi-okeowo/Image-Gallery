@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./index.css";
-import ImageCard from "./components/imageCard";
+import ImageCard from "./components/ImageCard";
 import ImageSearch from "./components/ImageSearch";
 
 function App() {
