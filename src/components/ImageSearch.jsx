@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 
-export const ImageSearch = ({ searchText }) => {
+const ImageSearch = ({ searchText }) => {
   const [text, setText] = useState("");
 
   const onSubmit = (e) => {
@@ -33,3 +33,5 @@ export const ImageSearch = ({ searchText }) => {
 ImageSearch.propTypes = {
   searchText: PropTypes.func.isRequired,
 };
+
+export default ImageSearch;

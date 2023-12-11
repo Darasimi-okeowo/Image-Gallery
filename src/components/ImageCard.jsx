@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const imageCard = ({ image }) => {
+const ImageCard = ({ image }) => {
   const tags = image.tags.split(",");
 
   return (
@@ -39,7 +39,7 @@ export const imageCard = ({ image }) => {
   );
 };
 
-imageCard.propTypes = {
+ImageCard.propTypes = {
   // Use PropTypes for type checking
   image: PropTypes.shape({
     webformatURL: PropTypes.string,
@@ -50,3 +50,5 @@ imageCard.propTypes = {
     tags: PropTypes.string,
   }).isRequired,
 };
+
+export default ImageCard;

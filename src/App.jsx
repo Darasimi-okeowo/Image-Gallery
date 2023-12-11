@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./index.css";
 import ImageCard from "./components/imageCard";
-import { ImageSearch } from "./components/ImageSearch";
+import ImageSearch from "./components/ImageSearch";
 
 function App() {
   const [images, setImages] = useState([]);
