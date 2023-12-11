@@ -1,4 +1,6 @@
-export default function imageCard({ image }) {
+import PropTypes from "prop-types";
+
+export const imageCard = ({ image }) => {
   const tags = image.tags.split(",");
 
   return (
@@ -35,4 +37,16 @@ export default function imageCard({ image }) {
       </div>
     </div>
   );
-}
+};
+
+imageCard.propTypes = {
+  // Use PropTypes for type checking
+  image: PropTypes.shape({
+    webformatURL: PropTypes.string,
+    user: PropTypes.string,
+    views: PropTypes.number,
+    downloads: PropTypes.number,
+    likes: PropTypes.number,
+    tags: PropTypes.string,
+  }).isRequired,
+};
